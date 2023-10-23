@@ -25,6 +25,7 @@ public class SearchController {
     @GetMapping(value = "")
     public String search(Model model) {
         model.addAttribute("columns", columnChoices);
+        model.addAttribute("searchOption","all");
         return "search";
     }
 
@@ -40,6 +41,7 @@ public class SearchController {
         }
         model.addAttribute("columns", columnChoices);
         model.addAttribute("jobs",jobs);
+        model.addAttribute("searchOption",searchType);
         return "search";
     }
 }

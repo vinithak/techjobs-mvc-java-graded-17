@@ -16,6 +16,8 @@ td {
     vertical-align: top;
 }
 
+
+
 tr:nth-child(odd) {
     background-color: #e4e4e4;
 }
@@ -33,6 +35,8 @@ table.job-listing {
 
 table.job-listing td:first-child {
     font-weight: bold;
+    font-style: italic;
+    color: blue;
 }
 
 table.job-listing td:last-child {
